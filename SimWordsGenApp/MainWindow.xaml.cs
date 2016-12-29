@@ -17,7 +17,7 @@ using System.ComponentModel;
 using System.Text.RegularExpressions;
 using System.Globalization;
 
-namespace WordsAnalyzerAndGenerator
+namespace SimWordsGenApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

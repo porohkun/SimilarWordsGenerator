@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WordsAnalyzerAndGenerator.Properties
+namespace SimWordsGenApp.Properties
 {
 
 

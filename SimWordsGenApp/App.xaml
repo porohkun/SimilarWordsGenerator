@@ -1,7 +1,7 @@
-﻿<Application x:Class="WordsAnalyzerAndGenerator.App"
+﻿<Application x:Class="SimWordsGenApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WordsAnalyzerAndGenerator"
+             xmlns:local="clr-namespace:SimWordsGenApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

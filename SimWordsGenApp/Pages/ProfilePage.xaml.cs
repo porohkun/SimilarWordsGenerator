@@ -1,18 +1,7 @@
-﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SimWordsGenApp.Pages
 {
@@ -39,28 +28,28 @@ namespace SimWordsGenApp.Pages
 
         private void New_Click(object sender, RoutedEventArgs e)
         {
-            var ofd = new OpenFileDialog();
-            ofd.Multiselect = true;
-            if (ofd.ShowDialog(MainWindow.Instance).Value)
-            {
-                var profile = Parser.Parse(ofd.FileNames.Select(f => System.IO.File.ReadAllText(f)), @"\b([a-zA-Z]+)\b");
-                var sfd = new SaveFileDialog();
-                if (sfd.ShowDialog(MainWindow.Instance).Value)
-                {
-                    profile.SaveToFile(sfd.FileName);
-                    LoadProfile(sfd.FileName);
-                }
-            }
+            //var ofd = new OpenFileDialog();
+            //ofd.Multiselect = true;
+            //if (ofd.ShowDialog(MainWindow.Instance).Value)
+            //{
+            //    var profile = Parser.Parse(ofd.FileNames.Select(f => System.IO.File.ReadAllText(f)), @"\b([a-zA-Z]+)\b");
+            //    var sfd = new SaveFileDialog();
+            //    if (sfd.ShowDialog(MainWindow.Instance).Value)
+            //    {
+            //        profile.SaveToFile(sfd.FileName);
+            //        LoadProfile(sfd.FileName);
+            //    }
+            //}
         }
 
         private void Open_Click(object sender, RoutedEventArgs e)
         {
-            var ofd = new OpenFileDialog();
-            ofd.Multiselect = false;
-            if (ofd.ShowDialog(MainWindow.Instance).Value)
-            {
-                LoadProfile(ofd.FileName);
-            }
+            //var ofd = new OpenFileDialog();
+            //ofd.Multiselect = false;
+            //if (ofd.ShowDialog(MainWindow.Instance).Value)
+            //{
+            //    LoadProfile(ofd.FileName);
+            //}
         }
 
         private void LoadProfile(string filename)

@@ -79,7 +79,7 @@ namespace SimWordsGenApp
 
         private void ForTests()
         {
-
+            var t = new ViewModels.MainWindowVMDummy();
         }
 
         protected override void OnStartup(StartupEventArgs e)

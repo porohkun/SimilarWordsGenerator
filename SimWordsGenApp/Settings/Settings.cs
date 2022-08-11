@@ -136,10 +136,8 @@ namespace SimWordsGenApp
                     TypeNameHandling = TypeNameHandling.Auto,
                     Formatting = Formatting.Indented
                 };
-                //_serializer.Converters.Add(SettingsConverters.RectangleConverter.Default);
-                //_serializer.Converters.Add(SettingsConverters.PointConverter.Default);
-                //_serializer.Converters.Add(SettingsConverters.SizeConverter.Default);
-                //_serializer.Converters.Add(SettingsConverters.CultureInfoConverter.Default);
+                _serializer.Converters.Add(SettingsConverters.GeneratorSourceDataConverter.Default);
+                _serializer.Converters.Add(SettingsConverters.SymbolObservableCollectionDataConverter.Default);
             }
             return _serializer;
         }

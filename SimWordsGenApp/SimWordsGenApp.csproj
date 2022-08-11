@@ -84,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\InputFieldWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,42 +96,42 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Commands\TestCommand.cs" />
+    <Compile Include="Commands\ReimportSourceCommand.cs" />
+    <Compile Include="Commands\AddSourcesToProfileCommand.cs" />
+    <Compile Include="Commands\AddNewProfileCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\InjectableCommand.cs" />
+    <Compile Include="Misc\LinqExtensions.cs" />
+    <Compile Include="Misc\ObservableCollectionExtensions.cs" />
     <Compile Include="Misc\PrismResourceInjectionAttribute.cs" />
     <Compile Include="Misc\PrismSingletonAttribute.cs" />
+    <Compile Include="Misc\TypeExtensions.cs" />
+    <Compile Include="Misc\WrappedObservableCollection.cs" />
+    <Compile Include="Models\Generator.cs" />
+    <Compile Include="Models\GeneratorProfile.cs" />
+    <Compile Include="Models\GeneratorSource.cs" />
+    <Compile Include="Models\Symbol.cs" />
+    <Compile Include="Settings\SymbolObservableCollectionDataConverter.cs" />
     <Compile Include="Settings\MainSettings.cs" />
     <Compile Include="Settings\MainWindowSettings.cs" />
     <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Settings\GeneratorSourceDataConverter.cs" />
     <Compile Include="Settings\SettingsPartWithNotifier.cs" />
     <Compile Include="Settings\WindowStateSettings.cs" />
+    <Compile Include="ViewModels\GeneratorSourceViewModel.cs" />
+    <Compile Include="ViewModels\GeneratorProfileViewModel.cs" />
+    <Compile Include="ViewModels\InputFieldWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\SymbolViewModel.cs" />
+    <Compile Include="Views\InputFieldWindow.xaml.cs">
+      <DependentUpon>InputFieldWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="Pages\GeneratorTestPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\MenuPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\ProfilePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Generator\GenProfile.cs" />
-    <Compile Include="Generator\Parser.cs" />
-    <Compile Include="Pages\GeneratorTestPage.xaml.cs">
-      <DependentUpon>GeneratorTestPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\MenuPage.xaml.cs">
-      <DependentUpon>MenuPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ProfilePage.xaml.cs">
-      <DependentUpon>ProfilePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

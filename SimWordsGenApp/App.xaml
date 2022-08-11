@@ -11,6 +11,7 @@
             </ResourceDictionary.MergedDictionaries>
 
             <vm:MainWindowVMDummy x:Key="MainWindowVMDummy"/>
+            <vm:InputFieldWindowVMDummy x:Key="InputFieldWindowVMDummy"/>
         </ResourceDictionary>
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>
